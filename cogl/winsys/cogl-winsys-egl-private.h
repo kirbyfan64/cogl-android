@@ -113,6 +113,7 @@ typedef struct _CoglRendererEGL
   EGLint egl_version_minor;
 
   CoglClosure *resize_notify_idle;
+  GHashTable *core_functions_hash;
 
   /* Data specific to the EGL platform */
   void *platform;
