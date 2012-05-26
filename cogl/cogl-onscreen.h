@@ -326,6 +326,22 @@ cogl_mir_onscreen_resize (CoglOnscreen *onscreen,
                           int           height);
 #endif /* COGL_HAS_EGL_PLATFORM_MIR_SUPPORT */
 
+#if defined (COGL_HAS_EGL_PLATFORM_ANDROID_SUPPORT)
+/**
+ * cogl_android_onscreen_update_size:
+ * @onscreen: A #CoglOnscreen framebuffer
+ * @width: The desired width of the framebuffer
+ * @height: The desired height of the framebuffer
+ *
+ * Since: 1.12
+ * Stability: unstable
+ */
+void
+cogl_android_onscreen_update_size (CoglOnscreen *onscreen,
+                                   int           width,
+                                   int           height);
+#endif /* COGL_HAS_EGL_PLATFORM_ANDROID_SUPPORT */
+
 /**
  * cogl_onscreen_set_swap_throttled:
  * @onscreen: A #CoglOnscreen framebuffer
