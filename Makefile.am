@@ -18,7 +18,7 @@ if BUILD_COGL_GST
 SUBDIRS += cogl-gst
 endif
 
-SUBDIRS += tests examples doc po build
+SUBDIRS += doc po build
 
 ACLOCAL_AMFLAGS = -I build/autotools ${ACLOCAL_FLAGS}
 
